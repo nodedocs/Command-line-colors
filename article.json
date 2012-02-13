@@ -1,8 +1,13 @@
 {
-    "title":"Command line colors",
-    "description": "How to add some flavor to your command line applications ",
-    "date": "Fri Aug 26 2011 03:08:50 GMT-0700 (PST)",
-    "tags": ["cli"],
-    "authors": ["Charlie McConnell"],
-    "difficulty": 1
+	"title": "Command line Colors",
+	"description": "How to add some flavor to your command line applications",
+	"date": "Mon, 13 Feb 2012 14:54:38 GMT",
+	"tags": ["cli", "colors"],
+	"authors": [
+	  { "name": "Josh Holbrook",
+		  "email": "josh.holbrook@gmail.com",
+		  "url": "https://github.com/jesusabdullah"
+    }
+	],
+	"difficulty": 2
 }
