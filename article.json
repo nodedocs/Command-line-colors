@@ -8,5 +8,8 @@
 		  "url": "https://github.com/avianflu"
     }
 	],
-	"difficulty": 2
+	"difficulty": 4
+	"categories": [
+	  ["Command-line"]
+	]
 }
