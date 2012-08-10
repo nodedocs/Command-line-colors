@@ -9,19 +9,21 @@ First, install it to the directory you'd like to work in.
 
 Now open up a little test script for yourself, and try something like this:
 
-     var colors = require('colors'),
-         stringOne = 'This is a plain string.',
-         stringTwo = 'This string is red.'.red,
-         stringThree = 'This string is blue.'.blue;
-     
-     console.log(stringOne.green);
-     console.log(stringOne.yellow);
+```javascript
+var colors = require('colors'),
+    stringOne = 'This is a plain string.',
+    stringTwo = 'This string is red.'.red,
+    stringThree = 'This string is blue.'.blue;
 
-     console.log(stringTwo);
-     console.log(stringThree);
+console.log(stringOne.green);
+console.log(stringOne.yellow);
 
-     console.log(stringTwo.magenta);
-     console.log(stringThree.grey.bold);
+console.log(stringTwo);
+console.log(stringThree);
+
+console.log(stringTwo.magenta);
+console.log(stringThree.grey.bold);
+```
 
 There are several things to take note of here - first, the string object has been prototyped, so any color may be added simply by adding the property to the string!  It works both on string literals and on variables, as shown at the top of the example above.
 
@@ -31,7 +33,9 @@ The last pair of `console.log` statements are probably the most important.  Beca
 
 Let's look at a more explicit example.  If you set the following properties with `colors.js`:
 
-     myString.red.blue.green
+```javascript
+myString.red.blue.green
+```
 
 You can think of your terminal saying to itself, "Make this green. No, make this blue.  No, make this red.  No more color codes now?  Red it is, then."  The codes are read in the reverse order, and the last/'innermost' is applied.  This can be extremely useful if you're using a library that sets its own default colors that you don't like - if you set a color code yourself on the string you pass in to the library, it will supersede the other author's color code(s).
 
